@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+body{
+  background:#f5bf3f;
+  display:flex;
+  justify-content: center;
+}
+
+.photo{
+  width:0px;
+  
+}
+
+.jake{
+  padding-top:12%;
+}
+
+
+.rosto{
+  background:#f5bf3f;
+  width:420px;
+  display:flex;
+  justify-content:space-between;
+  position:relative;
+}
+
+.olho {
+background:#333;
+width:150px;
+height:150px;
+border-radius: 50%;
+position:relative;
+}
+
+.olho:after {
+  background:#fff;  
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  position:absolute;
+  top:10px;
+  right:13px;
+  content:"";
+  animation: shake .1s infinite ease-in-out alternate;
+}
+
+.olho:before {
+  background:#fff;  
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  position:absolute;
+  top:90px;
+  left:25px;
+  content:"";
+  animation: shake .1s infinite ease-in-out alternate;
+}
+
+@keyframes shake{
+  from{ transform:translateX(-1px)}
+  to{ transform:translateX(1px)}
+}
+
+.bochecha{
+  border-top: 4px solid #333;
+  background:#f5bf3f;
+  width:150px;
+  height:60px;
+  border-radius:50%;
+  position:absolute;
+  bottom:-45px;
+  right:0;
+}
+
+.bochecha:before{
+  border-bottom: 4px solid #333;
+  background:#f5bf3f;
+  width:60px;
+  height:6px;
+  border-radius:50%;
+  position:relative;
+  margin-top:20px;
+  margin-left:30px;
+  display:inline-block;
+  content:"";
+}
+
+
+.direita{
+  border-top: 4px solid #333;
+  background:#f5bf3f;
+  width:150px;
+  height:60px;
+  border-radius:50%;
+  position:absolute;
+  bottom:-45px;
+  left:10px;
+  text-align:right;
+  overflow:hidden;
+}
+
+.direita:before{
+  border-bottom: 4px solid #333;
+  background:#f5bf3f;
+  width:60px;
+  height:6px;
+  border-radius:50%;
+  position:relative;
+  margin-top:20px;
+  left:-50px;
+  display:inline-block;
+  content:"";
+}
+
+
+.bigode{
+  
+  border: 4px solid #333;
+  border-bottom:0;
+  width:214px;
+  height:200px;
+  border-radius: 50% 50% 0 0;
+  position:absolute;
+  top:65px;
+  left:90px;
+  background: linear-gradient(to bottom, #f5bf3f 50%, rgba(0,0,0,0) 50%);
+}
+
+.corteBigode{
+  background:rgba(0,0,0,0,);
+  width:300px;
+  height:120px;
+  position:absolute;
+  bottom:-20px;
+  left:-6px;
+  z-index:1;
+  border-left: 6px solid #f5bf3f;
+  border-right:6px solid #f5bf3f;
+}
+
+.bigode:before{
+ border: 4px solid #333;
+ border-top: 0;
+ background: #f5bf3f;
+ width:60px;
+ height:50px;
+ border-radius: 0 0 50% 50%;
+ position:absolute;
+ bottom: 50px;
+ left: -4px;
+ z-index:2;
+ content:"";
+}
+
+.bigode:after{
+  border: 4px solid #333;
+  border-top: 0;
+  background: #f5bf3f;
+  width:60px;
+  height:50px;
+  border-radius: 0 0 50% 50%;
+  position:absolute;
+  bottom: 50px;
+  left: 150px;
+  z-index:2;
+  content:"";
+ }
+
+ .nariz{
+   background:#333;
+   width:105px;
+   height:60px;
+   border-radius:45%;
+   position:absolute;
+   top:52px;
+   left:52px;
+   z-index:3;
+   overflow:hidden;
+ }
+
+ .nariz:after{
+  background:#fff;  
+  width:20px;
+  height:10px;
+  border-radius:50%;
+  position:absolute;
+  top:10px;
+  right:30px;
+  content:"";
+ }
+
+
+ .boca{
+
+  border: 4px solid #333;
+  background: #862328;
+  width:110px;
+  height:100px;
+  border-radius: 50%;
+  position:absolute;
+  bottom: 62px;
+  left: 45px;
+  z-index:-1;
+  overflow:hidden;
+ }
+
+ .dente-esquerdo{
+  border:4px solid #333;
+  background:#fff;
+  width:20px;
+  height:15px;
+  border-radius:45%;
+  position:absolute;
+  bottom:15px;
+  left:10px;
+  z-index:1;
+ }
+
+ .dente-central{
+  border:4px solid #333;
+  background:#fff;
+  width:30px;
+  height:20px;
+  border-radius:45%;
+  position:absolute;
+  bottom:10px;
+  left:39px;
+  z-index:1;
+
+ }
+
+ .dente-direito{
+  border:4px solid #333;
+  background:#fff;
+  width:20px;
+  height:15px;
+  border-radius:45%;
+  position:absolute;
+  bottom:15px;
+  left:78px;
+  z-index:1;
+
+ }
+
+ .lingua{
+  background:#ea6e75;
+  width:40px;
+  height:40px;
+  border-radius:45%;
+  position:absolute;
+  bottom:-30px;
+  right:20px;
+  z-index:1;
+ }
+
+ .bracos{
+   width:400px;
+   height:300px;
+   display:flex;
+   justify-content:space-between;
+   align-items: flex-end;
+   position:relative;
+   z-index:2;
+ }
+
+ .esquerdo{
+  margin-left:-10px;
+  margin-top:15px;
+ }
+
+ .braco{
+   width:95px;
+   height:200px;
+   border-left: 4px solid #333;
+   border-right: 4px solid #333;
+   left:-30px;
+   margin-right:-12px;
+   margin-bottom:25px;
+   display:flex;
+   animation: hands-up 1s infinite ease-in-out alternate;
+  }
+
+  .dedo-esquerdo{
+    width:30px;
+    height:30px;
+    border: 4px solid #333;
+    border-bottom:0;
+    border-radius: 50% 50% 0 0;
+    margin-top:-30px;
+    margin-left:-4px;
+    
+  }
+
+  .dedo-meio{
+    width:30px;
+    height:30px;
+    border: 4px solid #333;
+    border-bottom:0;
+    border-radius: 50% 50% 0 0;
+    margin-top:-30px;
+    margin-left:-4px;
+    
+  }
+
+  .dedo-direito{
+    width:30px;
+    height:30px;
+    border: 4px solid #333;
+    border-bottom:0;
+    border-radius: 50% 50% 0 0;
+    margin-top:-30px;
+    margin-left:-4px;
+    margin-right:-4px;
+  }
+
+  @keyframes hands-up {
+    0%{transform:translateY(0)}
+    100%{transform:translateY(-20px)}
+  }
+
+  footer{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    align-items:center;
+    font-size:18px;
+    margin-bottom:-3%;
+    margin-left:-350px;
+    font-weight:bold;
+    font-family: 'MedievalSharp', cursive;
+    color:#333333;
+  }
+
+  @media(max-width:600px){
+    .jake{
+      padding-top:35%;
+    }
+    
+    footer{
+      margin-left:-350px;
+    }
+    
+  }
+
+
+
